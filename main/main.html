@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-Hub</title>
+    <link rel="icon" type="image/x-icon" href="images/KProducts.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  </head>
+  <body>
+
+    <nav class="navigation">
+      <a href="main.html" class="logo">
+        <img src="images/K-Hub logo.png" alt="logo" />
+    </a>
+
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <ul class="menu">
+        <li><a href="main.html">Projects</a></li>
+        <li><a href="#">Timeline</a></li>
+        <li><a href="https://kdomain.vercel.app/">About Me</a></li>
+    </ul>
+
+      <div class="nav-btns">
+        <!-- Search Box -->
+        <input type="checkbox" id="nav-search-btn" />
+        <label for="nav-search-btn" class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <form action="">
+            <!--close-->
+            <label for="nav-search-btn" class="nav-search-close">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div class="nav-search-box">
+              <input type="text" placeholder="Search Topic" required />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </label>
+        
+        <div class="userDropdown">
+
+          <button onclick="userDropDown()" class="userDropbtn">
+            <i class="fa-solid fa-user"></i>
+          </button>
+      
+          <div id="userDropdown" class="userDropdown-content">
+
+            <div class="dropdown-link-box">
+                <div class="dropdown-links">
+                  <ul>
+                    <li><button><a href="#">Profile</a></li></button>
+                    <li><button><a href="#">Settings</a></li></button>
+                    <li><button id="logoutBtn" onclick="logout()">Logout</button></li>
+                  </ul>
+                </div>
+            </div> 
+        </div>
+      </div>
+    </nav>
+    <!--navigation-end-->
+
+<!--News-->
+<section class="related-news">
+  <!--heading-popular-->
+  <div class="news-heading">
+    <h3>Past Projects</h3>
+  </div>
+
+  <!--container-->
+  <div class="r-news-container">
+
+        <!--box1-->
+        <div class="r-news-box">
+          <div class="r-news-img">
+            <img src="images/music-player.png" />
+          </div>
+          <div class="r-news-text">
+            <!--TITLE-->
+
+            <a href="../music-player/music-player.html" class="project-logo">
+              <img src="images/KMusic-b.png" alt="logo" />
+            </a>
+
+            <div class="news-box-p-name">
+              MUSIC PLAYER
+            </div>
+
+          </div>
+        </div>
+
+         <!--box2-->
+         <div class="r-news-box">
+          <div class="r-news-img">
+            <img src="images/art-pic-2.jpg" />
+          </div>
+          <div class="r-news-text">
+
+            <!--TITLE-->
+
+            <a href="../article/article.html" class="project-logo">
+              <img src="../article/images/KNTVb.png" alt="logo" />
+            </a>
+
+            <div class="news-box-p-name">
+              ARTICLE
+            </div>
+
+          </div>
+        </div>
+
+         <!--box3-->
+         <div class="r-news-box">
+          <div class="r-news-img">
+            <img src="images/T-80BVMbg.jpg" />
+          </div>
+          <div class="r-news-text">
+            
+             <!--TITLE-->
+
+             <a href="../my-favorites/main.html" class="project-logo">
+              <img src="images/TTV-logo.png" alt="logo" />
+             </a>
+
+            <div class="news-box-p-name">
+              MY FAVORITES
+            </div>
+
+          </div>
+        </div>
+
+        <!--box4-->
+        <div class="r-news-box">
+          <div class="r-news-img">
+            <img src="images/k-life-photo.png" />
+          </div>
+          <div class="r-news-text">
+            <!--TITLE-->
+
+            <a href="https://k-life-seven.vercel.app/" class="project-logo">
+              <img src="images/K-life.png" alt="logo" />
+            </a>
+
+            <div class="news-box-p-name">
+              MUSIC PLAYER
+            </div>
+
+          </div>
+        </div>
+  </div>
+
+</section><!--related-news-end-->
+
+    <!--footer-->
+    <footer>
+      <div class="footer-bottom">
+        <span class="footer-owner">Made By DennyDespot</span>
+        <span class="copyright">© Copyright 2024</span>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
